@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: 100vh;
+}
+
+/* Navbar container */
+.navbar {
+    padding-top: 30px;
+    overflow: hidden;
+    /* background-color: #333; */
+    font-family: Arial;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.NavHero1,
+.NavHero2 {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #acacac;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #acacac;
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(43, 73, 211);
+}
+
+
+.navbar a:hover {
+    border: 1px solid black;
+    padding: 8px 16px;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.layout {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    gap: 12rem;
+    margin-top: 5rem;
+}
+
+
+.Herobox1 {
+    margin-top: 7rem;
+}
+
+.Herobox1>h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+.Herobox2 img {
+    width: 39rem;
+    height: 45rem;
+}
+
+p {
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    padding-right: 38px;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+button {
+    border: none;
+    border-radius: 0.8rem;
+    padding: 13px 25px;
+    margin: 4rem 0rem;
+    color: white;
+    background-color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
